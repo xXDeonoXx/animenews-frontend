@@ -9,3 +9,9 @@ a {
 h1 {
   font-family: Staatliches;
 }
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
