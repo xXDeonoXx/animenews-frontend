@@ -17,7 +17,7 @@ interface NewsCarouselProps {
 
 const NewsCarousel = ({ articles }: NewsCarouselProps) => {
   return (
-    <div className="h-full w-1/2 flex">
+    <div className=" w-full h-72 sm:h-full sm:w-1/2 flex">
       <Swiper
         slidesPerView={1}
         onSlideChange={() => console.log('slide change')}

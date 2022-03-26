@@ -26,29 +26,29 @@ const Home = ({
     <Layout categories={categories} seo={homepage.attributes.seo}>
       <Seo seo={homepage.attributes.seo} />
       <div className=" w-full flex flex-col">
-        <div className="w-full h-96 flex justify-between items-center mb-8">
+        <div className="flex-col h-full sm:flex-row w-full sm:h-96 flex justify-between items-center mb-8 ">
           <NewsCarousel articles={articles} />
-          <div className="h-full w-full pl-2 flex flex-col">
+          <div className="h-full w-full mt-4 sm:mt-0 sm:pl-2 flex flex-col">
             {bannerArticles?.length >= 2 && (
               <>
                 <FeaturedBanner
                   article={bannerArticles[0]}
-                  className="h-1/2 mb-1"
+                  className="h-64 sm:h-1/2 mb-2"
                 />
                 <FeaturedBanner
                   article={bannerArticles[1]}
-                  className="h-1/2 mt-1 "
+                  className="h-64 sm:h-1/2 mt-2 "
                 />
               </>
             )}
           </div>
         </div>
-        <div className="flex">
-          <div className="w-full">
-            <h2 className="text-2xl font-semibold mb-8">Newest articles</h2>
+        <div className="flex flex-col-reverse lg:flex-row">
+          <div className="w-full mt-8 lg:mt-0">
+            <h2 className="text-2xl font-semibold mb-4">Newest articles</h2>
             <Articles articles={articles} />
           </div>
-          <div className="w-96">
+          <div className="lg:w-96">
             <Featureds articles={featureds} />
           </div>
         </div>

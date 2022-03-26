@@ -12,7 +12,7 @@ const ColumnLikeCard = ({ className, article }: ColumnLikeCard) => {
   return (
     <Link href={`/article/${article.attributes.slug}`}>
       <div
-        className={`bg-red-400 w-full h-full flex flex-col justify-between items-start cursor-pointer ${className} `}
+        className={`w-full h-full flex flex-col justify-between items-start cursor-pointer ${className} `}
         style={{
           backgroundImage: `url(${process.env.NEXT_PUBLIC_REACT_IMAGE_BASE_URL}${article.attributes.image.data.attributes.url})`,
           backgroundRepeat: 'no-repeat',
@@ -26,7 +26,7 @@ const ColumnLikeCard = ({ className, article }: ColumnLikeCard) => {
             ))}
           </div>
         </div>
-        <div className="w-full h-2/5 bg-gradient-to-t from-black px-4">
+        <div className="w-full h-3/5 sm:h-2/5 bg-gradient-to-t from-black px-4">
           <h2 className="text-white text-2xl font-bold ">
             {article.attributes.title}
           </h2>
