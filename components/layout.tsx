@@ -9,7 +9,7 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children, categories, seo }) => (
   <div className="flex justify-center items-center flex-col">
-    <div className="max-w-6xl w-full">
+    <div className="max-w-6xl w-full px-4">
       <div className="w-full min-h-screen">
         <div className="w-full ">
           <Nav categories={categories} />

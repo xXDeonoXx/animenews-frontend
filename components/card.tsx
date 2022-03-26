@@ -10,7 +10,7 @@ const Card = ({ article }: { article: Article }) => {
     <Link href={`/article/${article.attributes.slug}`}>
       <div className="w-full py-2 group">
         <div className=" flex w-full max-w-4xl h-48">
-          <div className="h-full w-96 overflow-hidden">
+          <div className="h-full w-48 md:w-96 overflow-hidden">
             <div className="h-full transition-all duration-500 group-hover:scale-125 relative">
               <NextImage
                 image={article.attributes.image}
