@@ -23,7 +23,7 @@ const Nav = ({ categories }: { categories: Category[] }) => {
           </ul>
         </div>
         <div className="flex ml-auto">
-          <ul className="flex gap-x-8 p-8 font-semibold capitalize">
+          <ul className="gap-x-8 p-8 font-semibold capitalize hidden md:flex">
             {categories.map((category) => {
               return (
                 <li key={category.id}>
